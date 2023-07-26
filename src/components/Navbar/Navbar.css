@@ -1,0 +1,49 @@
+nav{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    /* The filter CSS property applies graphical effects like blur or color shift to an element.  */
+}
+
+nav a{
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+}
+
+nav a:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active{
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+/* to change the active class and put light circle on what we choose */
+/* for that we have to use useState */
+
+nav p{
+    display: none;
+}
+
+/* nav p:hover{
+    visibility: visible;
+}
+
+nav p.active{
+    background: var(--color-bg);
+    color: var(--color-white);
+} */
