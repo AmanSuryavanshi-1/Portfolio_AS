@@ -35,15 +35,3 @@ nav a.active{
 /* to change the active class and put light circle on what we choose */
 /* for that we have to use useState */
 
-nav p{
-    display: none;
-}
-
-/* nav p:hover{
-    visibility: visible;
-}
-
-nav p.active{
-    background: var(--color-bg);
-    color: var(--color-white);
-} */
