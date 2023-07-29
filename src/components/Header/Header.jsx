@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 import Resume from './Resume'
-import me from '../../Assests/me.png'
+import me from '../../Assests/AmanS.png'
 import HeaderSocial from './HeaderSocial'
 
 const Header = ()=> {
