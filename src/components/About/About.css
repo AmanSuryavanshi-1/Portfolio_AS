@@ -1,7 +1,7 @@
 .about_container{
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    grid-template-columns: 35% 55%;
+    gap: 10%;
 }
 
 .about_me{
@@ -11,7 +11,7 @@
     background: linear-gradient(-45deg,transparent,var(--color-primary), transparent);
     display: grid;
     place-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .about_me-image{
@@ -56,11 +56,12 @@
 }
 
 .about_content p{
-    margin: 1rem 0 1rem;
+    margin: 2rem 0 2.6rem;
     color: var(--color-light);
     text-align: justify;
     word-spacing: 0.5px;
 }
+
 
 /* ============================ MEDIA QUERIES (MEDIUM DEVICES)====================== */
 
@@ -71,28 +72,30 @@
     }
     
     .about_me{
-        width:50%;
-        margin: 2rem 0 1.5rem;
+        width: 50%;
+        margin: 2rem auto 4rem;
     }
+    .about_content p{
+        margin: 1rem 0 1.5rem;
+    }
+    
  }
  
  /* ============================ MEDIA QUERIES (SMALL DEVICES)====================== */
  
  @media screen and (max-width:600px){
-     .about_me{
-        width: 65%;
+        .about_me{
+        width:65%;
         margin: 0 auto 3rem;
-     }
-
-     .about_cards{
+    }
+    .about_cards{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-     }
-
-     .about_content{
+    }
+    .about_content{
         text-align: center;
-     }
-     .about_content p{
+    }
+    .about_center p{
         margin: 1.5rem 0;
-     }
+    }
     }

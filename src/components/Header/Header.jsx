@@ -1,11 +1,12 @@
 import React from 'react'
 import './Header.css'
 import Resume from './Resume'
-import me from '../../Assests/AmanS.png'
+import me from '../../Assests/AS3.png'
 import HeaderSocial from './HeaderSocial'
 
 const Header = ()=> {
   return (
+    
     <header>
       <div className="container header_container">
         <h5>Hello I'm</h5>

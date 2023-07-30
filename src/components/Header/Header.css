@@ -47,7 +47,7 @@ header {
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* .me img
@@ -73,16 +73,47 @@ header {
    header{
     height: 68vh;
    }
+   .me img{
+    width: 22rem;
+    height: 28rem;
+    margin-top: 2rem;
+    margin-left: -24px;
+}  
 }
 
 /* ============================ MEDIA QUERIES (SMALL DEVICES)====================== */
 
-@media screen and (max-width:680px){
+@media screen and (max-width:720px){
     header{
         height: 100vh;
+        padding-top: 4rem;
+
     }
     .header_socials,
     .scroll_down{
         display: none;
     }
+}
+
+@media screen and (max-width:400px){
+    header{
+        height: 115vh;
+    }
+    /* .me img{
+        width: 22rem;
+        height: 28rem;
+        margin-top: 2rem;
+        margin-left: -15px;
+    }   */
+    /* .resume{
+        margin-top: 0;
+    }
+    .me{
+        padding: 0;
+    }
+    .header_socials,
+    .scroll_down{
+        display: none;
+    } */
+    
 }

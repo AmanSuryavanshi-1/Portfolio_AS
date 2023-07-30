@@ -31,7 +31,7 @@ const About = () => {
 
         <article className='about_card'>
         <FiUsers className="about_icon"/>
-        <h5>Companies Worked </h5>
+        <h5>Worked with </h5>
         <small>2+ Companies </small>
         </article>
 
@@ -48,10 +48,11 @@ creating intuitive, enjoyable experiences for users. Whether I'm working on a we
 every project I work on. I look forward to the opportunity to bring my skills and passion to next project.
         </p>
         <a href="#contact" className='btn btn-primary'> Let's Talk</a>
-
       
 
       </div>
+
+
       </div> 
     </section>
 
