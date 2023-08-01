@@ -129,6 +129,9 @@ img{
 
     section{
         margin-top: 6rem;
+        height: auto;
+        padding: 1rem;
+
     }
 }
 
@@ -142,14 +145,12 @@ img{
     section > h2{
         margin-bottom: 2rem;
     }
+    
 }
 
 
 @media screen and (max-width:400px){
     h1,h2,h3,h4,h5{
         line-height: 50px;
-    }
-    section{
-        height: auto;
     }
 }
