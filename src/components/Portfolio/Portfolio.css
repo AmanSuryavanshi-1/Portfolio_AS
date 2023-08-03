@@ -6,27 +6,44 @@
 }
 
 .work_item{
-    cursor: pointer;
     font-weight: 700;
-    transition: .3s;
+    padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
+.work_item.active {
+  background-color: var(--color-primary); /* Change this to the color you want for the active filter */
+  color: #fff; /* Change this to the color you want for the active filter text */
+}
+
+
 .work_item:hover{
-    color: var(--color-primary);
+  background-color: rgba(30, 112, 121, 0.532);
 }
 
 .work_container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1.875rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Show 3 items in a row */
+  gap: 1rem;
 }
 
 .work_card{
+    flex: 0 0 96%;
+  transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+    margin: 0 0.5rem;
     box-shadow: var(--shadow);
 }
+.work_carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
 .work_mask{
     background:  #6c6ce5;
     position: absolute;
@@ -115,3 +132,78 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+.carousel_buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .move_button {
+    margin-left: 20px;
+    padding: 1rem;
+    color: #fff;
+    background-color: #ffd15c;
+    height: 50px;
+    width: 158px;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 0.3s;
+    display: flex;
+  }
+  .move_button:hover {
+    background-color: #151409;
+  }
+.Btn_image{
+  height: 20px;
+  width: 50px;
+  padding: 0 0.4rem;
+}
+
+.Btn_text{
+  padding-top: 0.1rem;
+}
+.Right{
+  transform: rotate(180deg);
+  
+}
+
+/* Add media query to adjust the number of columns on smaller devices */
+@media screen and (max-width: 768px) {
+  .work_container {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 items in a row for medium devices */
+  }
+  .work_item {
+    font-weight: 300;
+    margin: 0;
+  }
+  .work_card {
+    flex: 0 0 45%; /* Show only 2 items at a time for medium devices */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .work_container {
+    grid-template-columns: 1fr; /* Show 1 item in a row for small devices */
+  }
+}
+/* ============================ MEDIA QUERIES (MEDIUM DEVICES)======================
+
+@media screen and (max-width:1024px){
+  .work_item{
+    font-weight: 300;
+    margin: 0;
+}
+.work_card{
+  flex: 0 0 45%; 
+}
+
+  
+}
+
+============================ MEDIA QUERIES (SMALL DEVICES)======================
+
+@media screen and (max-width:600px){
+  
+}
+   */
