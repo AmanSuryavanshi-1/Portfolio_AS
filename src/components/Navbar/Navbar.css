@@ -29,8 +29,8 @@ nav a:hover{
 }
 
 nav a.active{
-    background: var(--color-bg);
-    color: var(--color-white);
+    background: var(--color-primary);
+    color: var(--color-bg);
 }
 /* to change the active class and put light circle on what we choose */
 /* for that we have to use useState */

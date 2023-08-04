@@ -27,12 +27,13 @@
 .work_container{
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Show 3 items in a row */
+  grid-template-columns:  1fr; /* Show 3 items in a row */
   gap: 1rem;
+  width: fit-content;
 }
 
 .work_card{
-    flex: 0 0 96%;
+    flex: 0 0 31.8%;
   transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -169,9 +170,9 @@
 }
 
 /* Add media query to adjust the number of columns on smaller devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .work_container {
-    grid-template-columns: repeat(2, 1fr); /* Show 2 items in a row for medium devices */
+    grid-template-columns: 1fr; /* Show 2 items in a row for medium devices */
   }
   .work_item {
     font-weight: 300;
@@ -180,6 +181,57 @@
   .work_card {
     flex: 0 0 45%; /* Show only 2 items at a time for medium devices */
   }
+
+  .Btn_image{
+    height: 13px;
+    width: 30px;
+    padding-left:0px;
+  }
+  
+  .Btn_text{
+    padding-top: 0;
+  }
+
+  .move_button {
+    height: 45px;
+    width: 140px;
+  }
+  .move_button:hover {
+    background-color: #ffd15c;
+  }
+
+.link_button{
+    font-size: smaller;
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+    bottom: 0.5rem;
+    left: 2.5rem;
+    line-height: 35px;
+    
+}
+.code_button{
+    font-size: smaller;
+    height: 30px;
+    width: 30px;
+    opacity: 1;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    line-height: 35px;
+}
+.work_mask{
+  opacity: 0.5;
+}
+
+.work_category{
+  transform: translateY(0px);
+}
+
+.work_title{
+  transform: translateY(-25px);
+  opacity: 1;
+}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -187,23 +239,3 @@
     grid-template-columns: 1fr; /* Show 1 item in a row for small devices */
   }
 }
-/* ============================ MEDIA QUERIES (MEDIUM DEVICES)======================
-
-@media screen and (max-width:1024px){
-  .work_item{
-    font-weight: 300;
-    margin: 0;
-}
-.work_card{
-  flex: 0 0 45%; 
-}
-
-  
-}
-
-============================ MEDIA QUERIES (SMALL DEVICES)======================
-
-@media screen and (max-width:600px){
-  
-}
-   */

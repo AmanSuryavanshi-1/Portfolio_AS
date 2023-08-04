@@ -16,8 +16,8 @@ const Navbar = () => {
   
   return (
     <nav>
-      <a href="#" className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a> 
-      <a href="#About" onClick= {() => setActiveNav('#About')} className={activeNav === '#' ? 'active': ''}><AiOutlineUser/> </a>
+      <a href="#" onClick= {() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a> 
+      <a href="#About" onClick= {() => setActiveNav('#About')} className={activeNav === '#About' ? 'active': ''}><AiOutlineUser/> </a>
       <a href="#Experience" onClick= {() => setActiveNav('#Experience')} className={activeNav === '#Experience' ? 'active': ''}><BiBook/>  </a>
       <a href="#Services" onClick= {() => setActiveNav('#Services')} className={activeNav === '#Services' ? 'active': ''}><RiServiceLine/> </a>
       <a href="#Portfolio" onClick= {() => setActiveNav('#Portfolio')} className={activeNav === '#Portfolio' ? 'active': ''}><BsPersonWorkspace/>  </a>

@@ -47,7 +47,7 @@ looking for new and innovative ways to bring my visions to life.I believe that d
 creating intuitive, enjoyable experiences for users. Whether I'm working on a website or a mobile app, I bring my commitment to design excellence and user-centered thinking to
 every project I work on. I look forward to the opportunity to bring my skills and passion to next project.
         </p>
-        <a href="#contact" className='btn btn-primary'> Let's Talk</a>
+        <a href="#Contact" className='btn btn-primary'> Let's Talk</a>
       
 
       </div>

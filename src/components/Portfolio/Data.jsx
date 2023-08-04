@@ -41,7 +41,7 @@ const Data =[
 },
 {
     id: 5,
-    image: work4,
+    image: work5,
     link: "",
     github_link: "https://github.com/AmanSuryavanshi-1/CovidTracker",
     title: "CovidTracker",

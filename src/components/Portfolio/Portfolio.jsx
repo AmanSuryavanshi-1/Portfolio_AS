@@ -24,13 +24,13 @@ const Portfolio = () => {
     setActiveFilter(categoryItem);
   }
 
-  // useEffect(() => {
-  //   const autoSlide = setInterval(() => {
-  //     setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
-  //   }, 5000); // Change slide every 5 seconds
+  useEffect(() => {
+    const autoSlide = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
+    }, 5000); // Change slide every 5 seconds
 
-  //   return () => clearInterval(autoSlide); // Clean up interval on component unmount
-  // }, [items]);
+    return () => clearInterval(autoSlide); // Clean up interval on component unmount
+  }, [items]);
 
   const handleMoveLeft = () => {
     setActiveIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
@@ -54,7 +54,7 @@ const Portfolio = () => {
         
         <div className="work_container">
         
-        <div className="work_carousel" style={{ transform: `translateX(-${activeIndex * 100}%)` }}>
+        <div className="work_carousel" style={{ transform: `translateX(-${activeIndex * 33.3333}%)` }}>
           {items.map((elem) =>{
             const{id, image, title,link, github_link, category} = elem;
             return (

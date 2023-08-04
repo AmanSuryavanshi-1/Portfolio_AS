@@ -6,7 +6,7 @@ const Resume = () => {
         {/* download is used to give functionality of download to the CV file */}
         {/* Css is already assigned in index.css for className= 'btn' / btn-primay*/}
         <a href={CV} download className='btn'>Download CV</a>
-        <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+        <a href="#Contact" className='btn btn-primary'>Let's Talk</a>
     </div>
   )
 }
