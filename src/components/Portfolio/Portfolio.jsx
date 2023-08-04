@@ -60,7 +60,7 @@ const Portfolio = () => {
             return (
               <div className="work_card" key={id}>
                 <div className="work_thumbnail">
-                  <img src={image} alt="" className='work_img'/>
+                  <img src={image} height={'350px'} width={'300px'} alt="" className='work_img'/>
                   <div className='work_mask'></div>
                 </div>
 

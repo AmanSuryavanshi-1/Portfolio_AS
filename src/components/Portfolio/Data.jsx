@@ -1,9 +1,15 @@
-import work1 from "../../Assests/work-1.svg"
-import work2 from "../../Assests/work-2.svg"
-import work3 from "../../Assests/work-3.svg"
-import work4 from "../../Assests/work-4.svg"
-import work5 from "../../Assests/work-5.svg"
-import work6 from "../../Assests/work-6.svg"
+import work1 from "../../Assests/E-coomerce.jpg"
+import work2 from "../../Assests/Newsapp.jpg"
+import work3 from "../../Assests/Cloud Note.jpg"
+import work4 from "../../Assests/Textutil.jpg"
+import work5 from "../../Assests/covid.jpg"
+import work6 from "../../Assests/Spotify.jpg"
+import work7 from "../../Assests/work-4.svg"
+import work8 from "../../Assests/Digital clock.jpg"
+import work9 from "../../Assests/Notes keeper.jpg"
+import work10 from "../../Assests/QR.jpg"
+import work11 from "../../Assests/work-6.svg"
+import work12 from "../../Assests/work-1.svg"
 
 const Data =[
 {
@@ -57,7 +63,7 @@ const Data =[
 },
 {
     id: 7,
-    image: work5,
+    image: work7,
     link: "https://amansuryavanshi-1.github.io/Analog-Clock/",
     github_link: "https://github.com/AmanSuryavanshi-1/Analog-Clock",
     title: "Analog Clock",
@@ -65,7 +71,7 @@ const Data =[
 },
 {
     id: 8,
-    image: work5,
+    image: work8,
     link: "https://amansuryavanshi-1.github.io/Digital-Clock/",
     github_link: "https://github.com/AmanSuryavanshi-1/Digital-Clock",
     title: "Digital Clock",
@@ -73,7 +79,7 @@ const Data =[
 },
 {
     id: 9,
-    image: work6,
+    image: work9,
     link: "https://amansuryavanshi-1.github.io/Notes-Keeper-/",
     github_link: "https://github.com/AmanSuryavanshi-1/Notes-Keeper-",
     title: "Notes Keeper",
@@ -81,7 +87,7 @@ const Data =[
 },
 {
     id: 10,
-    image: work6,
+    image: work10,
     link: "https://amansuryavanshi-1.github.io/QR-Code-Generator/",
     github_link: "https://github.com/AmanSuryavanshi-1/QR-Code-Generator",
     title: "QR Code Generator",
@@ -89,7 +95,7 @@ const Data =[
 },
 {
     id: 11,
-    image: work1,
+    image: work11,
     title: "Calm Sleep Dashboard",
     link: "https://calm-sleep-dashboard.netlify.app/",
     github_link: "https://github.com/AmanSuryavanshi-1/Calm-Sleep-Assignment",
@@ -98,7 +104,7 @@ const Data =[
 },
 {
     id: 12,
-    image: work6,
+    image: work12,
     link: "",
     github_link: "",
     title: "Rotating Navbar",
