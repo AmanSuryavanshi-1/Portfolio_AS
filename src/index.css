@@ -14,10 +14,34 @@
 using color variable we can change the color scheme of whole project while changing it here only  */
 
 :root {
-    --color-bg: #1f1f38;
+    /* --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
     --color-primary-variant:rgba(77, 181, 255, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6); */
+
+    /* red black  */
+/*     
+    --color-bg:  #000000 ; 
+    --color-bg-variant:#74F0ED ;
+    --color-primary: #EA445A;  */
+    
+    /* green black  */
+    /* --color-bg:  #000000 ; 
+    --color-bg-variant: #6E6E6E;
+    --color-primary: #BCFD4C; */
+
+/* orange black
+    --color-bg: #1D2228 ; 
+    --color-bg-variant: #373A36;
+    --color-primary:    #FB8122; */
+    
+    --color-bg: #191919 ; 
+    --color-bg-variant: #fdb693;
+    --color-primary:   #FAB162;
+
+    --color-primary-variant: #D5E7ED; 
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
     

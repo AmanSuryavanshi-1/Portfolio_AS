@@ -46,7 +46,7 @@ const Portfolio = () => {
       <div className='container main_container'>
   <div className='portfolio_container'>
         <div className='work_filters'>
-          <span className={`work_item ${activeFilter === 'Everything' ? 'active' : ''}`} onClick={() => {setItems(Data); setActiveFilter('Everything'); }} >Everything</span>
+          <span className={ `work_item ${activeFilter === 'Everything' ? 'active' : ''}`} onClick={() => {setItems(Data); setActiveFilter('Everything'); }} >Everything</span>
           <span className={`work_item ${activeFilter === 'Major' ? 'active' : ''}`} onClick={() => filterItem("Major")}>Major Projects </span>
           <span className={`work_item ${activeFilter === 'Minor' ? 'active' : ''}`} onClick={() => filterItem("Minor")}> Minor Projects </span>
         </div>
