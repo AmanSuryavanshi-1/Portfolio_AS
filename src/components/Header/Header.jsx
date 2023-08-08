@@ -6,7 +6,7 @@ import Scroll from './Scroll'
 
 const Header = ()=> {
   return (
-    <header>
+    <section id='header'>
 
       <div className="container header_container">
       
@@ -18,7 +18,7 @@ const Header = ()=> {
 
       <Scroll/>
       </div>
-    </header>
+    </section>
   )
 }
 

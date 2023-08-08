@@ -5,7 +5,7 @@ const Data = () => {
   return (
     <div className='header_data'>
     <h3>Hello I'm</h3>
-    <h1>Aman Suryavanshi</h1>
+    <h1 className='header_title'>Aman Suryavanshi
     <svg
               width="36"
               height="36"
@@ -55,6 +55,7 @@ const Data = () => {
                 fill="#EBA352"
               ></path>
             </svg>
+    </h1>
     <h3 className='header_subtitle'>A Tech Geek</h3>
     <p className="header_description">To succeed in an environment of growth and excellence and earn a job which
 provides me job satisfaction and self-development and help me achieve
