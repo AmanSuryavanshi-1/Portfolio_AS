@@ -56,7 +56,7 @@ const Portfolio = () => {
         
         <div className="work_carousel" style={{ transform: `translateX(-${activeIndex * 33.3333}%)` }}>
           {items.map((elem) =>{
-            const{id, image, title,link, github_link, category} = elem;
+            const{id, image, title,link, github_link, category,description} = elem;
             return (
               <div className="work_card" key={id}>
                 <div className="work_thumbnail">
@@ -66,7 +66,7 @@ const Portfolio = () => {
 
                 <span className="work_category">{category}</span>
                 <h3 className="work_title">{title}</h3>
-                {/* <p className="work_category">{description}</p> */}
+                <p className="work_description">{description}</p>
                 {link && (
                 <a href={link} className='link_button'>
                   <i className="icon-link work_button-icon"><FiLink/></i>

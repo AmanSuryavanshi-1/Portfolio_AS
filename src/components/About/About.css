@@ -33,17 +33,19 @@
 }
 
 .about_card{
-    background: var(--color-bg-variant);
     border: 1px solid transparent;
+    border-color: var(--color-primary-variant);
     border-radius: 1rem;
     padding: 1.5rem;
     text-align: center;
     transition: var(--transition);
+    box-shadow: 0px 2px 5px 0px var(--color-primary);
 }
 
 .about_card:hover{
     background: transparent;
-    border-color: var(--color-primary-variant);
+    background: var(--color-bg-variant);
+    transform: translateY(-10px);
 }
 
 .about_card h5{

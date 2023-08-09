@@ -74,7 +74,22 @@
     transform: translateY(-40px);
     transition: .3s;
 }
-
+.work_description{
+  color: #ffffff;
+  border-bottom-left-radius: 0.98rem;
+  border-bottom-right-radius: 0.98rem;
+  position: absolute;
+  top: 6rem;
+  font-size: smaller;
+  padding: 0 1rem;
+  /* transform: translateY(-40px); */
+  transition: .3s;
+  opacity: 0;
+  text-align: left;
+}
+.work_card:hover .work_description{
+  opacity: 0.8;
+}
 .work_title{
     color: #fff;
     font-size:medium;
@@ -82,7 +97,6 @@
     padding: 0 1.25rem;
     position: absolute;
     top: 3.75rem;
-    transform: translateY(30px);
     transition: .3s;
     opacity: 0;
 }
@@ -131,7 +145,7 @@
 .work_card:hover .work_title,
 .work_card:hover .work_category{
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .carousel_buttons {
@@ -185,7 +199,9 @@
   .work_card {
     flex: 0 0 45%; /* Show only 2 items at a time for medium devices */
   }
-
+  .work_description{
+    top: auto;
+  }
   .Btn_image{
     height: 13px;
     width: 30px;
