@@ -7,10 +7,12 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
 import Experience from './components/Experience/Experience'
 import Footer from './components/Footer/Footer'
+import Modes from './components/Modes/Modes'
 
 const App = () => {
   return (
     <>
+      <Modes/>
       <Header/>
       <Navbar/>
       <About/>
