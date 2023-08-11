@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../Assests/resume.pdf'
+import CV from '../../Assests/Resume.pdf'
 
 const Data = () => {
   return (
