@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Modes.css'
 
 
@@ -14,6 +14,12 @@ const Modes = () => {
     if(e.target.checked) setDarkMode();
     else setLightMode()
   };
+
+  // this useEffect will set the initial theme to dark when the component mounts or when the website is loaded 
+  useEffect(() => {
+    setDarkMode();
+  }, []);
+
   return (
     <label className="theme-switch">
     <input type="checkbox" className="theme-switch__checkbox" onChange={toggleTheme}/>
