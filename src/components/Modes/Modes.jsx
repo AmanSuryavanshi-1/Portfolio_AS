@@ -1,13 +1,18 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Modes.css'
 
-
 const Modes = () => {
+  // this set will set the initial theme to moon (dark) when the component mounts or when the website is loaded 
+  const [isDarkMode, setIsDarkMode] = useState(true); // Default to dark mode
+
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme","dark");
+    setIsDarkMode(true);
+
   };
   const setLightMode = () => {
     document.querySelector("body").setAttribute("data-theme","light");
+    setIsDarkMode(false);
   };
 
   const toggleTheme = (e) =>{
@@ -17,12 +22,16 @@ const Modes = () => {
 
   // this useEffect will set the initial theme to dark when the component mounts or when the website is loaded 
   useEffect(() => {
-    setDarkMode();
-  }, []);
+    if (isDarkMode) {
+      setDarkMode();
+    } else {
+      setLightMode();
+    }
+  }, [isDarkMode]);
 
   return (
     <label className="theme-switch">
-    <input type="checkbox" className="theme-switch__checkbox" onChange={toggleTheme}/>
+    <input type="checkbox" className="theme-switch__checkbox" checked={isDarkMode} onChange={toggleTheme}/>
     <div className="theme-switch__container">
       <div className="theme-switch__clouds"></div>
       <div className="theme-switch__stars-container">
